@@ -2,7 +2,7 @@ let cardContainer = document.getElementById('card-container');
 let buttonContainer = document.getElementById('button-container');
 
 const func = async () => {
-    let a = await fetch('http://localhost:3000/api/book/getAllBooks', {
+    let a = await fetch('https://backend-app-2gpt.onrender.com/api/book/getAllBooks', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

@@ -21,7 +21,7 @@ contact.innerText = localStorage.getItem('details').split(',')[2]
 
 
 submit.addEventListener('click', async () => {
-    let a = await fetch('http://localhost:3000/api/book/addBook', {
+    let a = await fetch('https://backend-app-2gpt.onrender.com/api/book/addBook', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ submit.addEventListener('click', async () => {
 
 
 let func = async () => {
-    let a = await fetch('http://localhost:3000/api/book/fetchAllBooks', {
+    let a = await fetch('https://backend-app-2gpt.onrender.com/api/book/fetchAllBooks', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ let func = async () => {
 
     for (let i = 0; i < li.length; i++) {
         li[i].addEventListener('click', async (e) => {
-            let a = await fetch('http://localhost:3000/api/book/deleteBook', {
+            let a = await fetch('https://backend-app-2gpt.onrender.com/api/book/deleteBook', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

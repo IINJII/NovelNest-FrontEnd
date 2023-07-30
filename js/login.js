@@ -4,7 +4,7 @@ submitBtn.addEventListener('click', async (e) => {
     let email = document.getElementById('floatingInput').value;
     let password = document.getElementById('floatingPassword').value;
 
-    let a = await fetch('http://localhost:3000/api/auth/login', {
+    let a = await fetch('https://backend-app-2gpt.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

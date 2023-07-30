@@ -24388,7 +24388,7 @@ for (let i = 0; i < 100; i++) {
 
 
 const func = async () => {
-    let a = await fetch('http://localhost:3000/api/auth/auto', {
+    let a = await fetch('https://backend-app-2gpt.onrender.com/api/auth/auto', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

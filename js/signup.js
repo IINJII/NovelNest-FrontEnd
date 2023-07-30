@@ -4,7 +4,7 @@ let btn = document.getElementById('submit-btn');
 if(localStorage.getItem('token'))
 {
     const func = async () => {
-        let a = await fetch('http://localhost:3000/api/auth/auto', {
+        let a = await fetch('https://backend-app-2gpt.onrender.com/api/auth/auto', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ btn.addEventListener('click', async (e) => {
     let name = document.getElementById('name').value;
     let contact = document.getElementById('contact').value;
     
-    let a = await fetch('http://localhost:3000/api/auth/createUser', {
+    let a = await fetch('https://backend-app-2gpt.onrender.com/api/auth/createUser', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
